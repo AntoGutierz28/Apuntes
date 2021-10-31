@@ -103,4 +103,33 @@ docker inspet --format '{{.State.Pid}}' /*name*/
 kill -9 /**/
 ```
 
-6.
+> nginx proxy reverso
+
+6. Crear proxy nginx
+
+```
+docker run -d --name proxy nginx
+```
+
+> Cada contenedor posee su propia iterfaz de red
+
+7. Apagar un contenedor
+
+```
+docker stop /*name*/        //Para el contenedor
+docker rm -f /*name*/       //Para y elimina
+```
+
+> -d para que el contenedor corra de background 8. Asignar puerto de local
+
+```
+docker run -d --name proxy -p /*puerto anfitrion*/:/*puerto contenedor*/ nginx
+```
+
+9. Visualizar el log del contenedor
+
+```
+docker logs /*name*/         //view log
+docker logs -f /*name*/      //ver log time real
+docker logs --tail /*cantidad*/ -f /*name*/ //ultimos logs
+```
