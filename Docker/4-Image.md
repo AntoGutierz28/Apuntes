@@ -54,3 +54,33 @@ docker tag ubuntu:/*tag*/ /*nuevo nombre*\/ubuntu:/*tag*/
 ```
 docker push /**nombre de usuario de doxker hub*\/ubuntu:/*tag*/
 ```
+
+## Sistemas de capas
+
+1. Historial de imagenes, mostrar capas
+
+```
+docker history /*nomber imagen*/
+```
+
+> dive herramienta para entender mejor las imagenes https://github.com/wagoodman/dive
+
+2. Ver datos de la imagen, cambio, capas, etc.
+
+```
+dive ubuntu:/*nombre*/
+```
+
+> Lo que almacea una capa es un cambio
+
+3. Modificar una capa
+
+```
+RUN ***
+```
+
+- Averiguar
+
+```
+docker commit
+```
