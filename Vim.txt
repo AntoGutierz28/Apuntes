@@ -1,0 +1,26 @@
+Comandos Vim
+Modo insert	->	i / <Insert> / a
+Modo view	->	v
+Modo comando	->	<Esc>
+Salir		->	q
+Guardar	->	w
+Salir/guardar	->	x
+Ver numero	->	set nu
+Ocultar número	->	set nu!
+Background	->	set backgroung=/light-dark/
+Cortar		->	d
+Cortar 1 linea	->	dd
+Cortar + linea	->	d<#>d
+Copiar		->	y
+Copiar 1 linea	->	yy
+Copiar + linea	->	y<#>y
+Pegar		->	p
+Buscar		->	/<texto>
+Atras		->	<Shift>+n
+Siguiente	->	n
+Deshacer	->	u
+Rehacer	->	<Ctrl>+r	
+Primera linea	->	gg
+Ultima linea	->	G
+Nueva linea	->	o
+Sin pregunta	->	!
